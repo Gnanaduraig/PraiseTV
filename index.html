@@ -33,6 +33,13 @@
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
+  <script>
+  var path = window.location.pathname;
+  if (!path.endsWith("/")) {
+    window.location.replace(path + "/");
+  }
+</script>
+
   <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
